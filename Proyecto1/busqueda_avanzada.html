@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda Avanzada</title>
+    <link rel="stylesheet" type="text/css" href="estilos_avanzada.css">
+    </head>
+        
+<body>
+    <img src="googlelogo.png" alt="Descripción de la imagen" width="300" onclick="location.href='index.html'">
+    <div class="divider"></div>
+    <h1>Búsqueda avanzada</h1>
+            
+
+    <form action="https://www.google.com/search" method="GET">
+        <div class="divider1"></div>
+        <h3>Mostrar páginas que contengan...</h3> 
+
+
+        
+        <label>Todas estas palabras:</label>
+        <input type="text" name="as_q" ><br><br>
+        
+        <label>Esta palabra o frase exactas:</label>
+        <input type="text" name="as_epq" ><br><br>
+        
+        <label>Cualquiera de estas palabras:</label>
+        <input type="text" name="as_oq" ><br><br>
+        
+        <label>Ninguna de estas palabras:</label>
+        <input type="text" name="as_eq" ><br><br>
+        
+        <label>Números del:</label>
+        <input type="text" name="as_nlo" >
+         al
+        <input type="text" name="as_nhi" > <br><br>
+        <div class="divider1"></div>
+        <h3>Luego restringe tus resultados por...</h3>
+        
+        <label>Idioma:</label>
+        <select name="lr">
+            <option value="">Cualquier Idioma</option>
+            <option value="lang_en">Ingles</option>
+            <option value="lang_es">Español</option>
+            <option value="lang_fr">Frances</option>
+        </select><br><br>
+        
+        <label>Región:</label>
+        <select name="cr">
+            <option value="">Cualquier Región</option>
+            <option value="countryUS">Estados Unidos</option>
+            <option value="countryGB">Reino Unido</option>
+            <option value="countryES">España</option>
+        </select><br><br>
+        
+        <label>Última Actualización:</label>
+        <select name="as_qdr">
+            <option value="">En cualquier momento</option>
+            <option value="d">Las últimas 24hrs</option>
+            <option value="w">La última semana</option>
+            <option value="m">El último año</option>
+            <option value="y">El último año</option>
+        </select><br><br>
+        
+        <label>Sitio o Dominio:</label>
+        <input type="text" name="as_sitesearch" ><br><br>
+        
+        <label>Terminos que aparecen:</label>
+        <select name="as_occt">
+            <option value="any">En cualquier lugar de la pagina</option>
+            <option value="title">En el titulo de la pagina</option>
+            <option value="url">En la URL de la pagina</option>
+            <option value="links">En el link de la pagina</option>
+        </select><br><br>
+        
+        <label>Tipo de archivo:</label>
+        <select name="as_filetype">
+            <option value="">Culaquier formato</option>
+            <option value="pdf">PDF</option>
+            <option value="doc">Microsoft Word</option>
+            <option value="ppt">PowerPoint</option>
+            <option value="xls">Excel</option>
+        </select><br><br>
+        
+        <label>Derechos de Uso:</label>
+        <select name="as_rights">
+            <option value="">Sin filtro o licencia</option>
+            <option value="cc_publicdomain">Dominio publico</option>
+            <option value="cc_attribute">Libre de usar con atribucion</option>
+            <option value="cc_sharealike">Libre de usar y compartir</option>
+        </select><br><br>
+        
+        <input type="submit" value="Busqueda Avanzada ">
+    </form>
+    <div class="divider1"></div>
+
+    <p>Tambien puedes....</p>
+    <a href="https://support.google.com/websearch/answer/2466433?visit_id=638754643600643856-3036519238&p=adv_pages_similar&hl=en&rd=1">Encuentra paginas similares a la URL </a><br>
+    <a href="https://support.google.com/websearch/answer/54068?hl=en&visit_id=638754643600643856-3036519238&p=adv_pages_visited&rd=1">Busca paginas que hayas visitado </a><br>
+    <a href="https://support.google.com/websearch/answer/2466433?visit_id=638754643600643856-3036519238&p=adv_operators&hl=en&rd=1">Usa operadores en la caja de busqueda</a><br>
+    <a href="https://www.google.com/preferences?hl=en-MX">Personaliza tu configuración de busqueda </a><br>
+    
+<br>
+ <div class="barra-negra">
+    <a href="#">Mexico</a><br>
+    <a href="#">Ayuda</a>
+    <a href="#">Privacidad</a>
+    <a href="#">Terminos</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda</title>
+    <link rel="stylesheet" href="estilos_index.css">
+</head>
+<body>
+<img src="imagen1.gif" alt="logo google">
+
+<form action="https://google.com/search">
+
+    <div class="search-container">
+        <input type="text" name="q" id="searchInput" placeholder="Buscar por Google" class="barra_busqueda">
+        <svg class="lupa" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+        </svg>
+    </div>
+
+    <div class="botones-busqueda">
+        <p><input type="submit" value="Google Search" class="google_search"></p>
+        <input type="button" value="Voy a tener suerte" class="luck_search" onclick="luckySearch()">
+    </div>
+    
+    
+    <script>
+        function luckySearch() {
+            const query = document.getElementById('searchInput').value;
+            if (query) {
+                const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}&btnI=I`;
+                window.open(googleSearchUrl, '_blank');
+            } else {
+                window.open("https://doodles.google/", "_blank");
+            }
+        }
+    </script>
+
+    <div class="E-Izquierda">
+        <a href="" class="Ariba-Demas">Mexico</a>
+        <div class="divider"></div>
+        <div class="segunda-hilera">
+            <div class="izquierda">
+                <a href="">Sobre Google</a>
+                <a href="">Publicidad</a>
+                <a href="">Negocios</a>
+                <a href="">Como Funciona La Busqueda</a>
+            </div>
+            <div class="derecha">
+                <a href="" class="Derecha">Privacidad</a>
+                <a href="" class="Derecha">Condiciones</a>
+                <a href="" class="Derecha">Configuraciones</a>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+    <button class="b1" onclick="location.href='imagenes.html'">Imágenes</button>
+    <button class="b2" onclick="location.href='busqueda_avanzada.html'">Búsqueda Avanzada</button>
+
+</body>
+</html>

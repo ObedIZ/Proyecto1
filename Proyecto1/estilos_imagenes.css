@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+img{  
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -67%);
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;    
+}
+
+.imagen{
+    color: #4487f6;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 900px;
+    top: 45%;
+    white-space: nowrap;
+}
+
+.search-container {
+    position: absolute; 
+    top: 53%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+
+}
+
+.barra_busqueda {
+    width: 600px;
+    padding: 15px 40px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    text-align: left;
+    align-content: left;
+    cursor: pointer;
+}
+
+.lupa {
+    position: absolute;
+    right: 470px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.busqueda_imagen{
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    background-color: rgb(212, 181, 127);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    cursor: pointer;
+}
+
+.b1{
+    width: 150px;
+    border-radius: 0px;
+    padding: 10px;
+    border: 10px  #fffefe;
+    color: white;
+    cursor: pointer;
+    background: none;
+    position: absolute;
+    top: 5%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+}
+
+.E-Izquierda {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: rgb(216, 216, 216);
+}
+
+.Ariba-Demas {
+    margin-bottom: 1px;
+}
+
+.E-Izquierda a {
+    text-decoration: none; 
+    color: black; 
+    margin-right: 10px; /
+}
+
+.divider {
+    width: 100%;
+    height: 1px; 
+    background-color: gray; 
+    margin: 10px 0; 
+}
+
+.E-Izquierda .segunda-hilera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.E-Izquierda .Derecha {
+    margin-left: auto; 
+}
